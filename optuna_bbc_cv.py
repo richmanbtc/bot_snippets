@@ -3,6 +3,8 @@ import optuna
 from sklearn.base import BaseEstimator
 from sklearn.model_selection import cross_val_predict
 
+# https://arxiv.org/abs/1708.07180
+
 class OptunaBbcCv(BaseEstimator):
     def __init__(self, create_model=None, sampler=None, n_trials=None, cv=None, scoring_y_pred=None, features=None):
         self.create_model = create_model
